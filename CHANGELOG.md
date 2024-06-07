@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/wyatex/use-audio-record/compare/v0.0.2...v0.0.3)
+
+### 🚀 Enhancements
+
+- 修改导出名 ([9213bba](https://github.com/wyatex/use-audio-record/commit/9213bba))
+
+### ❤️ Contributors
+
+- Wyatex <wyatex@qq.com>
+
 ## v0.0.2
 
 
