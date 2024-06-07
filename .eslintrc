@@ -1,0 +1,12 @@
+{
+  "extends": ["eslint-config-unjs"],
+  "rules": {
+    "unicorn/no-null": "off",
+    "import/named": "off",
+    "no-useless-constructor": "off",
+    "unicorn/prefer-blob-reading-methods": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-extra-semi": "off",
+    "unicorn/no-array-for-each": "off"
+  }
+}
