@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://github.com/wyatex/use-audio-record/compare/v0.0.3...v1.0.1)
+
+### 📖 Documentation
+
+- 完善关键词 ([597d1cd](https://github.com/wyatex/use-audio-record/commit/597d1cd))
+
+### ❤️ Contributors
+
+- Wyatex <wyatex@qq.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/wyatex/use-audio-record/compare/v0.0.2...v0.0.3)

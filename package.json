@@ -1,12 +1,19 @@
 {
   "name": "use-audio-record",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "repository": "wyatex/use-audio-record",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
-  "keywords": ["record", "audio", "audio-record", "vue", "react", "hooks"],
+  "keywords": [
+    "record",
+    "audio",
+    "audio-record",
+    "vue",
+    "react",
+    "hooks"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
