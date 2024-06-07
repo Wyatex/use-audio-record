@@ -7,7 +7,7 @@
 
 <!-- /automd -->
 
-This is my package description.
+Simpler Usage of Browser's Recording API in Vue or React.
 
 ## Usage
 
