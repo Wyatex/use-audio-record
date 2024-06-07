@@ -36,14 +36,14 @@ bun install use-audio-record
 
 Import:
 
-<!-- automd:jsimport cjs cdn name="use-audio-record" imports="useMediaRecorderReact,useMediaRecorderVue" -->
+<!-- automd:jsimport cjs cdn name="use-audio-record" imports="useAudioRecorderReact,useAudioRecorderVue" -->
 
 **ESM** (Node.js, Bun)
 
 ```js
 import {
-  useMediaRecorderReact,
-  useMediaRecorderVue,
+  useAudioRecorderReact,
+  useAudioRecorderVue,
 } from "use-audio-record";
 ```
 
@@ -51,8 +51,8 @@ import {
 
 ```js
 const {
-  useMediaRecorderReact,
-  useMediaRecorderVue,
+  useAudioRecorderReact,
+  useAudioRecorderVue,
 } = require("use-audio-record");
 ```
 
@@ -60,8 +60,8 @@ const {
 
 ```js
 import {
-  useMediaRecorderReact,
-  useMediaRecorderVue,
+  useAudioRecorderReact,
+  useAudioRecorderVue,
 } from "https://esm.sh/use-audio-record";
 ```
 
@@ -71,24 +71,24 @@ import {
 
 <summary>For React:</summary>
 
-<!-- automd:jsimport cjs cdn name="use-audio-record/react" imports="useMediaRecorder" -->
+<!-- automd:jsimport cjs cdn name="use-audio-record/react" imports="useAudioRecorder" -->
 
 **ESM** (Node.js, Bun)
 
 ```js
-import { useMediaRecorder } from "use-audio-record/react";
+import { useAudioRecorder } from "use-audio-record/react";
 ```
 
 **CommonJS** (Legacy Node.js)
 
 ```js
-const { useMediaRecorder } = require("use-audio-record/react");
+const { useAudioRecorder } = require("use-audio-record/react");
 ```
 
 **CDN** (Deno, Bun and Browsers)
 
 ```js
-import { useMediaRecorder } from "https://esm.sh/use-audio-record/react";
+import { useAudioRecorder } from "https://esm.sh/use-audio-record/react";
 ```
 
 <!-- /automd -->
@@ -99,24 +99,24 @@ import { useMediaRecorder } from "https://esm.sh/use-audio-record/react";
 
 <summary>For Vue:</summary>
 
-<!-- automd:jsimport cjs cdn name="use-audio-record/vue" imports="useMediaRecorder" -->
+<!-- automd:jsimport cjs cdn name="use-audio-record/vue" imports="useAudioRecorder" -->
 
 **ESM** (Node.js, Bun)
 
 ```js
-import { useMediaRecorder } from "use-audio-record/vue";
+import { useAudioRecorder } from "use-audio-record/vue";
 ```
 
 **CommonJS** (Legacy Node.js)
 
 ```js
-const { useMediaRecorder } = require("use-audio-record/vue");
+const { useAudioRecorder } = require("use-audio-record/vue");
 ```
 
 **CDN** (Deno, Bun and Browsers)
 
 ```js
-import { useMediaRecorder } from "https://esm.sh/use-audio-record/vue";
+import { useAudioRecorder } from "https://esm.sh/use-audio-record/vue";
 ```
 
 <!-- /automd -->

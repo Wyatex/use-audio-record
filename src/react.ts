@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { getMimeType } from './utils'
 import { webmFixDuration } from './blob-fix'
 import { SAMPLING_RATE } from './constants'
-export function useMediaRecorder() {
+export function useAudioRecorder() {
   const streamRef = useRef<MediaStream | null>(null)
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const chunksRef = useRef<Blob[]>([])

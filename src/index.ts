@@ -1,2 +1,2 @@
-export { useMediaRecorder as useMediaRecorderReact } from './react'
-export { useMediaRecorder as useMediaRecorderVue } from './vue'
+export { useAudioRecorder as useAudioRecorderReact } from './react'
+export { useAudioRecorder as useAudioRecorderVue } from './vue'

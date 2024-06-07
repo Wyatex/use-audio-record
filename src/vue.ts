@@ -3,7 +3,7 @@ import { getMimeType } from './utils'
 import { webmFixDuration } from './blob-fix'
 import { SAMPLING_RATE } from './constants'
 
-export function useMediaRecorder() {
+export function useAudioRecorder() {
   const stream = ref<MediaStream | null>(null)
   const mediaRecorder = ref<MediaRecorder | null>(null)
   const recording = ref(false)
