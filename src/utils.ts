@@ -1,8 +1,10 @@
-type MimeType = 'audio/webm' |
-  'audio/mp4' |
-  'audio/ogg' |
-  'audio/wav' |
-  'audio/aac' | undefined
+type MimeType =
+  | 'audio/webm'
+  | 'audio/mp4'
+  | 'audio/ogg'
+  | 'audio/wav'
+  | 'audio/aac'
+  | undefined
 
 export function getMimeType(): MimeType {
   const types = [

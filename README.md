@@ -13,7 +13,7 @@ This is my package description.
 
 Install package:
 
-<!-- automd:pm-install -->
+<!-- automd:pm-install name="use-audio-record" -->
 
 ```sh
 # ✨ Auto-detect
@@ -36,27 +36,92 @@ bun install use-audio-record
 
 Import:
 
-<!-- automd:jsimport cjs cdn name="pkg" -->
+<!-- automd:jsimport cjs cdn name="use-audio-record" imports="useMediaRecorderReact,useMediaRecorderVue" -->
 
 **ESM** (Node.js, Bun)
 
 ```js
-import {} from "pkg";
+import {
+  useMediaRecorderReact,
+  useMediaRecorderVue,
+} from "use-audio-record";
 ```
 
 **CommonJS** (Legacy Node.js)
 
 ```js
-const {} = require("pkg");
+const {
+  useMediaRecorderReact,
+  useMediaRecorderVue,
+} = require("use-audio-record");
 ```
 
 **CDN** (Deno, Bun and Browsers)
 
 ```js
-import {} from "https://esm.sh/pkg";
+import {
+  useMediaRecorderReact,
+  useMediaRecorderVue,
+} from "https://esm.sh/use-audio-record";
 ```
 
 <!-- /automd -->
+
+<details>
+
+<summary>For React:</summary>
+
+<!-- automd:jsimport cjs cdn name="use-audio-record/react" imports="useMediaRecorder" -->
+
+**ESM** (Node.js, Bun)
+
+```js
+import { useMediaRecorder } from "use-audio-record/react";
+```
+
+**CommonJS** (Legacy Node.js)
+
+```js
+const { useMediaRecorder } = require("use-audio-record/react");
+```
+
+**CDN** (Deno, Bun and Browsers)
+
+```js
+import { useMediaRecorder } from "https://esm.sh/use-audio-record/react";
+```
+
+<!-- /automd -->
+
+</details>
+
+<details>
+
+<summary>For Vue:</summary>
+
+<!-- automd:jsimport cjs cdn name="use-audio-record/vue" imports="useMediaRecorder" -->
+
+**ESM** (Node.js, Bun)
+
+```js
+import { useMediaRecorder } from "use-audio-record/vue";
+```
+
+**CommonJS** (Legacy Node.js)
+
+```js
+const { useMediaRecorder } = require("use-audio-record/vue");
+```
+
+**CDN** (Deno, Bun and Browsers)
+
+```js
+import { useMediaRecorder } from "https://esm.sh/use-audio-record/vue";
+```
+
+<!-- /automd -->
+
+</details>
 
 ## Development
 
