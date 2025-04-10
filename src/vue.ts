@@ -2,8 +2,10 @@ import { ref, watch } from 'vue'
 import { getMimeType } from './utils'
 import { webmFixDuration } from './blob-fix'
 import { SAMPLING_RATE } from './constants'
+import { IOptions } from './types'
 
-export function useAudioRecorder() {
+export function useAudioRecorder(options: IOptions = {}) {
+  const { mimeType = getMimeType(), sampleRate = SAMPLING_RATE } = options
   const stream = ref<MediaStream | null>(null)
   const mediaRecorder = ref<MediaRecorder | null>(null)
   const recording = ref(false)
@@ -27,7 +29,7 @@ export function useAudioRecorder() {
         await initRecorder()
       }
       mediaRecorder.value = new MediaRecorder(stream.value!, {
-        mimeType: getMimeType(),
+        mimeType,
       })
       mediaRecorder.value?.addEventListener('dataavailable', async (event) => {
         if (event.data.size > 0) {
@@ -48,7 +50,7 @@ export function useAudioRecorder() {
           const fileReader = new FileReader()
           fileReader.onloadend = async () => {
             const audioCTX = new AudioContext({
-              sampleRate: SAMPLING_RATE,
+              sampleRate,
             })
             recordedAudioBuffer.value = await audioCTX.decodeAudioData(
               fileReader.result as ArrayBuffer,
@@ -98,6 +100,8 @@ export function useAudioRecorder() {
     }
   })
   return {
+    mimeType,
+    sampleRate,
     stream,
     mediaRecorder,
     recording,

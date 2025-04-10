@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { getMimeType } from './utils'
 import { webmFixDuration } from './blob-fix'
 import { SAMPLING_RATE } from './constants'
-export function useAudioRecorder() {
+import { IOptions } from './types'
+export function useAudioRecorder(options: IOptions = {}) {
+  const { mimeType = getMimeType(), sampleRate = SAMPLING_RATE } = options
   const streamRef = useRef<MediaStream | null>(null)
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const chunksRef = useRef<Blob[]>([])
@@ -26,7 +28,7 @@ export function useAudioRecorder() {
         await initRecorder()
       }
       const mediaRecorder = new MediaRecorder(streamRef.current!, {
-        mimeType: getMimeType(),
+        mimeType,
       })
       mediaRecorderRef.current = mediaRecorder
       mediaRecorder.addEventListener('dataavailable', async (event) => {
@@ -48,7 +50,7 @@ export function useAudioRecorder() {
           const fileReader = new FileReader()
           fileReader.onloadend = async () => {
             const audioCTX = new AudioContext({
-              sampleRate: SAMPLING_RATE,
+              sampleRate,
             })
             setRecordedAudioBuffer(
               await audioCTX.decodeAudioData(fileReader.result as ArrayBuffer),
