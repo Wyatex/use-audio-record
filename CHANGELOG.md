@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/wyatex/use-audio-record/compare/v1.0.1...v1.1.0)
+
+### 🚀 Enhancements
+
+- 支持自定义MIME和采样率 ([3df8c11](https://github.com/wyatex/use-audio-record/commit/3df8c11))
+
+### ❤️ Contributors
+
+- Wyatex <wyatex@qq.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/wyatex/use-audio-record/compare/v0.0.3...v1.0.1)
